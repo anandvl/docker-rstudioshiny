@@ -5,7 +5,7 @@ This is a repository of the Dockerfile used to create a dockerimage to run RStud
 
 A typical command to run this image will be
 
-docker run -t -d --name=Ravl -p 8787:8787 -p 3838:3838 -e PASSWORD=passwd_here -v $PWD:/home/rstudio -v $PWD/shiny:/srv/shiny-server -v$PWD/logs:/var/log/shiny-server anandvl/rstudioshiny
+> docker run -t -d --name=Ravl -p 8787:8787 -p 3838:3838 -e PASSWORD=passwd_here -v $PWD:/home/rstudio -v $PWD/shiny:/srv/shiny-server -v$PWD/logs:/var/log/shiny-server anandvl/rstudioshiny
 
 Then, the RStudio server can be accessed at https://localhost:8787 (username is 'rstudio') and the RShiny server can be accessed at https://localhost:3838
 
